@@ -1,0 +1,12 @@
+appId: com.promptflow.app
+productName: PromptFlow
+directories:
+  output: release
+win:
+  target: nsis
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+files:
+  - dist/**/*
+  - ../apps/mobile/**/*

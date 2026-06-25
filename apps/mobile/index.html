@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>PromptFlow</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div id="camera-area"><span>📷 Camera Preview</span></div>
+    <div id="main-area">
+      <tp-view></tp-view>
+      <tp-countdown></tp-countdown>
+      <div id="controls-bar">
+        <tp-controls></tp-controls>
+        <button id="toggleEditor">✎ Edit</button>
+        <button id="toggleSettings">⚙ Settings</button>
+      </div>
+      <div id="panel-area" style="display:none">
+        <tp-editor></tp-editor>
+        <tp-settings></tp-settings>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+  </script>
+</body>
+</html>

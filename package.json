@@ -1,0 +1,10 @@
+{
+  "name": "promptflow",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "desktop:start": "npm -w @promptflow/desktop run start",
+    "desktop:dist": "npm -w @promptflow/desktop run dist"
+  }
+}

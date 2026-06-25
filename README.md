@@ -1,28 +1,28 @@
 # PromptFlow
 
-Cross-platform teleprompter — PWA core + Electron (Windows) + Mobile PWA.
+跨平台提词器 — PWA 核心 + Electron（Windows）+ 移动端 PWA。
 
-> 🚧 **Early stage:** design spec done, implementation pending. See [ROADMAP.md](./ROADMAP.md).
+> 🚧 **早期阶段：** 设计规范已完成，代码待实现。详见 [ROADMAP.md](./ROADMAP.md)。
 
-## Concept
+## 概念
 
-A distraction-free teleprompter that runs everywhere:
-- **Windows desktop:** frameless floating overlay pinned to screen top, system-wide hotkeys
-- **Mobile (iOS/Android):** PWA with fullscreen + landscape mode, touch gestures
+一个无干扰的提词器，处处可用：
+- **Windows 桌面：** 无边框浮动窗口，固定屏幕顶部，系统级全局快捷键
+- **手机端（iOS/Android）：** PWA 全屏横屏模式 + 触摸手势
 
-Built from analysis of [notchprompt](https://github.com/saif0200/notchprompt) (macOS Swift teleprompter).
+基于 [notchprompt](https://github.com/saif0200/notchprompt)（macOS Swift 提词器）的深度分析构建。
 
-## Tech Stack
+## 技术栈
 
-| Layer | Tech |
-|-------|------|
-| Core engine | TypeScript, Canvas API, Web Components |
-| Desktop shell | Electron, globalShortcut |
-| Mobile shell | PWA (manifest.json + service worker) |
-| Deploy | Vercel (PWA) + GitHub Releases (Windows .exe) |
+| 层 | 技术 |
+|---|------|
+| 核心引擎 | TypeScript、Canvas API、Web Components |
+| 桌面壳 | Electron、globalShortcut |
+| 移动壳 | PWA（manifest.json + service worker） |
+| 部署 | Vercel（PWA）+ GitHub Releases（Windows .exe） |
 
-## Status
+## 状态
 
-🟡 **In design.** Implementation starts next session.
+🟡 **设计中。** 下次会话开始实现。
 
-See the [design spec](./docs/superpowers/specs/2026-06-25-promptflow-design.md) for full architecture.
+完整架构见 [设计规范](./docs/superpowers/specs/2026-06-25-promptflow-design.md)。

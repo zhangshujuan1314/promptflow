@@ -54,7 +54,7 @@ export class StateManager {
   }
 
   set(key: StateKey, value: any): void {
-    this.state[key] = value;
+    (this.state as any)[key] = value;
     this.notify(key, value);
     this.schedulePersist();
   }
